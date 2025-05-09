@@ -1,1 +1,4 @@
 ¿Qué es Bitcoin?
+
+Bitcoin es una moneda digital (o criptomoneda) que permite realizar transacciones directamente entre personas sin necesidad de un intermediario como un banco. 
+Fue creada en 2009 por una persona o grupo bajo el seudónimo de Satoshi Nakamoto.
