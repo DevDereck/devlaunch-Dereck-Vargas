@@ -4,10 +4,6 @@ Bitcoin es una moneda digital (o criptomoneda) que permite realizar transaccione
 Fue creada en 2009 por una persona o grupo bajo el seudónimo de Satoshi Nakamoto.
 
 
-aracterísticas clave de Bitcoin:
-🔐 Descentralizado: No está controlado por ningún gobierno ni banco central.
-
-📖 Basado en blockchain: Usa una tecnología llamada cadena de bloques, que es un registro público e inmutable de todas las transacciones.
 
 💰 Cantidad limitada: Solo existirán 21 millones de bitcoins, lo que evita la inflación descontrolada.
 
