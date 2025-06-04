@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DevDereck/devlaunch-Dereck-Vargas/issues"
   },
-  "homepage": "https://github.com/DevDereck/devlaunch-Dereck-Vargas#readme"
+  "homepage": "https://github.com/DevDereck/devlaunch-Dereck-Vargas#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
