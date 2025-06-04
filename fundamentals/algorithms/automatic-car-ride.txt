@@ -1,0 +1,17 @@
+Proporciona una explicación detallada en un archivo .txt de las acciones que realizar al preparate para conducir un carro automático.
+
+
+SOLUCIÓN:
+
+buscar las llaves
+camino hacia el carro
+intento abrir el carro
+si la puerta está bloqueada uso la llave 
+si la puertá está desbloqueada, abro la puerta
+me siento y me pongo el cinturón
+si el carro lo utilizan varias personas ajusto los asientos y los espejos
+si no entonces dejo todo como está
+coloco la llave y giro para encender el motor
+verifico con el tablero si hay algún problema mecánico
+si no entonces pongo el freno y quito el freno de mano
+pongo marcha D para avanzar y salir de la cochera, hacia mi desitno.
