@@ -1,1 +1,19 @@
- 
+Proporciona una explicación detallada en un archivo .txt de las acciones que realizar al cocinar un huevo.
+
+SOLUCIÓN:
+
+vaya a la cocina
+
+¿Hay huevos?
+sí hay huevos procedo a pensar de que forma los quiero.
+si no procedo a buscar cocinar otra cosa.
+
+busco el sartén a utilizar
+busco ingredientes como aceite, sal, olores como cebolla
+enciendo la cocina a un nivel medio-alto
+pongo aceite al sartén
+espero a que caliente un poco el sartén
+incluyo en el sartén los olores
+abro los huevos
+echo los huevos al sartén 
+y cocino al gusto dependiendo del estilo de huevo que quiera.
