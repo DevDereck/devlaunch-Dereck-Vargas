@@ -22,44 +22,42 @@ transfer(toAccount, amount): transfiere fondos de la cuenta actual a otra cuenta
 si hay suficientes fondos disponibles.
 */
 
-function Account (id, holderName, balance = 0) {
-	this.id = id
-	this.holderName = holderName
-	this.balance = balance
+function Account(id, holderName, balance = 0) {
+  this.id = id;
+  this.holderName = holderName;
+  this.balance = balance;
 
-	this.deposit = (amount) => {
-		this.balance += amount  
-	}
+  this.deposit = (amount) => {
+    this.balance += amount;
+  };
 
-	this.withdraw = (amount) => {
-		if (this.balance >= amount) {
-			this.balance -= amount
-			return amount
-		}
+  this.withdraw = (amount) => {
+    if (this.balance >= amount) {
+      this.balance -= amount;
+      return amount;
+    }
 
-		return null
-	}
+    return null;
+  };
 
-	this.transfer = (toAccount, amount) => {
-		const money = this.withdraw (amount)
+  this.transfer = (toAccount, amount) => {
+    const money = this.withdraw(amount);
 
-		if (money) {
-			toAccount.deposit(money)
-			return toAccount
-		}
+    if (money) {
+      toAccount.deposit(money);
+      return toAccount;
+    }
 
-		return null
+    return null;
+  };
 
-	}
+  return this;
+}
 
-	return this
-} 
+const acc1 = new Account(1, "Dereck", 10000);
+acc1.deposit(1000);
+acc1.withdraw(5000);
 
-const acc1 = new Account (1, 'Dereck', 10000) 
-acc1.deposit (1000)
-acc1.withdraw (5000)
-
-
-const acc2 = new Account (2, 'Marifer')
-console.log(acc1.transfer(acc2, 5000))
-console.log (acc1)
+const acc2 = new Account(2, "Marifer");
+console.log(acc1.transfer(acc2, 5000));
+console.log(acc1);
