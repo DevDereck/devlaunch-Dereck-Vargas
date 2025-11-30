@@ -1,33 +1,58 @@
-let message : string = 'Hola Dereck'
+type DogColor = 'black' | 'white' | 'brown'
 
 
-console.log('Hello World!!')
-
-
-function grades (a:number, b: number) : number {
-  return (a+b)
+interface Address {
+  city: string,
+  state: string
 }
 
-interface Account {
-  id: string | number
-  name: string
-  balance: number
+class Person {
+  
+  constructor(public name : string, public address : Address) {
+    this.name = name
+    this.address = address 
+  } 
+
 }
 
-const createAccount = (id: string | number, name: string, balance: number = 0) : Account => {
-  return {
-    id, 
-    name,
-    balance
+class BabyDog {
+  private age: number 
+
+  constructor ( private name: string, public color: DogColor,  public owner: Person) {
+    this.name = name
+    this.age = 0
+    this.color = color
+    this.owner = owner
   }
+
+  public setAge = (age : number) : void =>{
+    this.age++
+  }
+
+  public getAge = () : number => {
+    return this.age
+  }
+
+  private cry = () : void => {
+    console.log(`I'm Crying, pls Help me!`)
+  }
+
+  public bark = () : void  => {
+    console.log('GUAU, GUAU!!')
+    this.cry()
+  }
+
 }
 
-const acc1 =  createAccount(1, 'Dereck', 0)
-acc1.balance
+const p1 = new Person ('Dereck', {city: 'Heredia', state: 'Mercedes Norte' })
 
-import promptSync from 'prompt-sync'
+const bd1 = new BabyDog ('Oreo', "black", p1)
+const bd2 = new BabyDog ('Macky', "white", p1)
+const bd3 = new BabyDog ('Princesa', "white", p1)
 
-const prompt = promptSync ();
+bd1.bark()
+bd1.setAge(1)
+bd1.getAge
+bd1.owner.name
 
-const result = prompt ('message: ') 
-console.log(result)
+
