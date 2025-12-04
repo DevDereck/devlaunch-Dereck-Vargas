@@ -7,11 +7,7 @@ class Fan{
 
   public speed : FanSpeed
 
-  constructor (
-    public type: string,
-    public size: FanSize,
-    public color: FanColor
-  ){
+  constructor ( public type: string, public size: FanSize, public color: FanColor ) {
     this.type = type
     this.size = size
     this.color = color
