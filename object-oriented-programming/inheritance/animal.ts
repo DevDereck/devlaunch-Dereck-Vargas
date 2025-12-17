@@ -12,8 +12,6 @@ Crea una clase base Animal con las propiedades y métodos necesarios.
 Extender la clase Animal para crear clases específicas como Leon y Elefante que tengan comportamientos y propiedades particulares.
 */
 
-
-
 class Animal {
   constructor(
     public name: string,
